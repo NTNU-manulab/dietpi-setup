@@ -1,0 +1,65 @@
+accessControl:
+  salt: erXxJtMLjC9JjS03CGJfrzgwb7SnzQRy
+api:
+  key: 35408E065F024A65ADB8C21E09BD227C
+plugins:
+  announcements:
+    _config_version: 1
+    channels:
+      _blog:
+        read_until: 1653306600
+      _important:
+        read_until: 1521111600
+      _octopi:
+        read_until: 1646055600
+      _plugins:
+        read_until: 1655182800
+      _releases:
+        read_until: 1653386400
+  discovery:
+    upnpUuid: 3c9ff298-dba5-4702-9939-a2b6c23f0fa3
+  errortracking:
+    unique_id: fd5d0dcc-ca85-47e3-adc3-868151c36c31
+  gcodeviewer:
+    _config_version: 1
+  softwareupdate:
+    _config_version: 9
+  tracking:
+    unique_id: 4a01d954-ea39-4b76-a59e-8fe706ddacc3
+  virtual_printer:
+    _config_version: 1
+printerProfiles:
+  default: _default
+serial:
+  autoconnect: true
+server:
+  commands:
+    serverRestartCommand: sudo systemctl restart octoprint
+    systemRestartCommand: sudo reboot
+    systemShutdownCommand: sudo poweroff
+  firstRun: false
+  onlineCheck:
+    enabled: true
+  pluginBlacklist:
+    enabled: true
+  port: '5001'
+  secretKey: Kd9ba3vkFD9XDzbhz4u7inkBA6yvs7Oc
+  seenWizards:
+    backup: null
+    corewizard: 4
+    tracking: null
+temperature:
+  profiles:
+  - bed: 100
+    chamber: null
+    extruder: 210
+    name: ABS
+  - bed: 60
+    chamber: null
+    extruder: 180
+    name: PLA
+webcam:
+  ffmpeg: /usr/bin/ffmpeg
+  snapshot: http://127.0.0.1:8082/?action=snapshot
+  stream: http://192.168.1.50:8082/?action=stream
+  streamRatio: '4:3'
