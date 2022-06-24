@@ -1,7 +1,7 @@
 accessControl:
-  salt: erXxJtMLjC9JjS03CGJfrzgwb7SnzQRy
+  salt: gi2RbqVL70mBemKGgG2IqhbpFkX56ZBX
 api:
-  key: 35408E065F024A65ADB8C21E09BD227C
+  key: 6D15A345D5B14B688559116486A39372
 plugins:
   announcements:
     _config_version: 1
@@ -13,25 +13,29 @@ plugins:
       _octopi:
         read_until: 1646055600
       _plugins:
-        read_until: 1655182800
+        read_until: 1655787600
       _releases:
         read_until: 1653386400
   discovery:
-    upnpUuid: 3c9ff298-dba5-4702-9939-a2b6c23f0fa3
+    upnpUuid: 44e9e6ae-d58f-41a3-84e2-b46bf0a824ef
   errortracking:
-    unique_id: fd5d0dcc-ca85-47e3-adc3-868151c36c31
+    unique_id: 5d6bbdb6-212e-4eca-9b31-192f6b33b3fb
   gcodeviewer:
     _config_version: 1
   softwareupdate:
     _config_version: 9
   tracking:
-    unique_id: 4a01d954-ea39-4b76-a59e-8fe706ddacc3
+    enabled: false
+    unique_id: 4032a5f6-0b04-4f0b-9161-e4d117fcf911
   virtual_printer:
     _config_version: 1
+    enabled: true
 printerProfiles:
   default: _default
 serial:
   autoconnect: true
+  baudrate: 0
+  port: AUTO
 server:
   commands:
     serverRestartCommand: sudo systemctl restart octoprint
@@ -43,11 +47,10 @@ server:
   pluginBlacklist:
     enabled: true
   port: '5001'
-  secretKey: Kd9ba3vkFD9XDzbhz4u7inkBA6yvs7Oc
+  secretKey: 8jFzRnpRaTEKg4MBdIyP3xFMKxzpCEph
   seenWizards:
     backup: null
     corewizard: 4
-    tracking: null
 temperature:
   profiles:
   - bed: 100
@@ -62,5 +65,3 @@ webcam:
   ffmpeg: /usr/bin/ffmpeg
   snapshot: http://127.0.0.1:8082/?action=snapshot
   stream: http://192.168.1.50:8082/?action=stream
-  streamRatio: '4:3'
-

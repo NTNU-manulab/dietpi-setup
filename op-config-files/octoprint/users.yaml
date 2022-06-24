@@ -1,0 +1,12 @@
+proto:
+  active: true
+  apikey: null
+  groups:
+  - admins
+  - users
+  password: 200f46ff1da34f871be84e3c34ccc3aca9aa496c6b8f79addbc72b3e56fd27bb6665894d8dbb88b5b8c5e3009ffcbc147ed9df03f8c4c3d246011447339e10de
+  permissions: []
+  roles:
+  - user
+  - admin
+  settings: {}
