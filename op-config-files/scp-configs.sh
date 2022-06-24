@@ -15,7 +15,7 @@ IPEND=55
 
 # Run script from op-config-files directory
 
-for i in {$IPSTART..$IPEND};
+for i in $( seq $IPSTART $IPEND )
 do
   scp -r ./octoprint/* root@192.168.1.$i:/mnt/dietpi_userdata/octoprint/.octoprint/
   ssh root@192.168.1.$i 'sudo chown -R octoprint:octoprint /mnt/dietpi_userdata/octoprint/.octoprint/*'
